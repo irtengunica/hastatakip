@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:text="Wifi Liste" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="top|center"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/editcihazid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Cihaz ID" >
+
+        </EditText>
+        <EditText
+            android:id="@+id/editcihazadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Cihaz Adı" >
+
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:text="Kablosuz Ağ Adı Seçiniz" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview"
+            android:textColor="@android:color/black"
+            android:background="@color/colorPrimary"
+            android:popupBackground="@android:color/black"
+            android:id="@+id/spinner">
+        </Spinner>
+
+          <EditText
+            android:id="@+id/editAgadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Ağ Adı" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editsPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Kablosuz Ağ Şifresi." >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/OnayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İşlemi Tamamla"
+            android:layout_gravity="center_horizontal" />
+        <!--
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            -->
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
